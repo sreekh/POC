@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "skAleUP.Common.Entities", "skAleUP.Common.Entities\skAleUP.Common.Entities.csproj", "{FA93769D-8CBC-407F-BEE9-7B9ED7DB755D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "skAleUP.Lab", "skAleUP.Lab\skAleUP.Lab.csproj", "{C374460E-FD37-4A76-8BC8-4A1D612A2691}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "skAleUP.MongoRepositories", "skAleUP.MongoRepositories\skAleUP.MongoRepositories.csproj", "{5F9BAF55-D41F-4C98-BDC9-D2F661949EC5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA93769D-8CBC-407F-BEE9-7B9ED7DB755D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA93769D-8CBC-407F-BEE9-7B9ED7DB755D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA93769D-8CBC-407F-BEE9-7B9ED7DB755D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA93769D-8CBC-407F-BEE9-7B9ED7DB755D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C374460E-FD37-4A76-8BC8-4A1D612A2691}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C374460E-FD37-4A76-8BC8-4A1D612A2691}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C374460E-FD37-4A76-8BC8-4A1D612A2691}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C374460E-FD37-4A76-8BC8-4A1D612A2691}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F9BAF55-D41F-4C98-BDC9-D2F661949EC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F9BAF55-D41F-4C98-BDC9-D2F661949EC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F9BAF55-D41F-4C98-BDC9-D2F661949EC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F9BAF55-D41F-4C98-BDC9-D2F661949EC5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

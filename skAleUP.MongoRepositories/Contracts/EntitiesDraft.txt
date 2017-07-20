@@ -1,0 +1,28 @@
+﻿Parsed webpage
+
+id
+baseUrl
+loadTime
+lastLoaded
+TotalLinks
+
+
+id
+linkInfo
+basePageUrl
+Url
+lastIndexed
+lastCrawled
+
+
+Local repository
+id
+filelocation
+mediatype
+fileextension
+genre
+author
+artist
+album
+created
+lastmodified
