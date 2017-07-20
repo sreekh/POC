@@ -1,0 +1,21 @@
+1. Get a URL
+2. Insert this in WebLink, with default values
+3. Run process which picks a;; WebLinks not crawled in past <configured> time, and start crawling.
+
+Crawling process:
+If the link is a webpage - Has links, resources, html,aspx,htm,php, etc, update link that its not leaf, and get all links and insert into WebLinks index
+else if its a resurce, update accordingly - LastCrawled, LastScraped.
+
+
+
+
+
+As you crawl, push to Queue
+
+Listeners of Queue - 
+Scraper
+Link extracters
+
+
+Recrawlers can periodically go through the repository and push items back to queue
+
