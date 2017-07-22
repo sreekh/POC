@@ -52,17 +52,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contracts\WebSiteCrawlerDbRepository.cs" />
+    <Compile Include="Contracts\BaseMongoDbRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\skAleUP.Common.Entities\skAleUP.Common.Entities.csproj">
-      <Project>{fa93769d-8cbc-407f-bee9-7b9ed7db755d}</Project>
-      <Name>skAleUP.Common.Entities</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,5 +1,4 @@
 ﻿using MongoDB.Driver;
-using skAleUP.Common.Entities.WebUtils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +8,7 @@ using System.Threading.Tasks;
 namespace skAleUP.MongoRepositories.Contracts
 {
     public class BaseMongoDbRepository<T>
-        where T : class, IWebElement
+        where T : class
     {
         private MongoClient mongoClient;
         private IMongoDatabase mongoDB;
@@ -19,7 +18,7 @@ namespace skAleUP.MongoRepositories.Contracts
             mongoDB = mongoClient.GetDatabase(databaseName);
         }
 
-        public IMongoCollection<T> GetCollection()
+        private IMongoCollection<T> GetCollection()
         {
             if (mongoDB != null)
             {
@@ -49,6 +48,11 @@ namespace skAleUP.MongoRepositories.Contracts
             else
                 return null;
         }
+        public List<T> GetDocuments()
+        {
+            return (from dbDOcs in GetCollection().AsQueryable<T>()
+                    select dbDOcs).ToList();
+        }
         public T CreateDocument(T document)
         {
             GetCollection().InsertOne(document);
@@ -59,5 +63,6 @@ namespace skAleUP.MongoRepositories.Contracts
             GetCollection().InsertMany(documents);
             return GetDocuments(documents);
         }
+
     }
 }
